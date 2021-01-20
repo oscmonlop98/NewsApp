@@ -8,4 +8,4 @@ Run `ng serve` for start the app. Navigate to `http://localhost:4200/`.
 
 ## Backend server
 
-Launch the server with a Node.js Debugger, and will run at http://localhost:3000 .
+Launch the server with a Node.js Debugger, and will run at `http://localhost:3000`.
