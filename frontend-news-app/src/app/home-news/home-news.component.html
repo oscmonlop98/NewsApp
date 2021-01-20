@@ -1,0 +1,33 @@
+<mat-grid-list cols="1" rowHeight="2:1" >
+    <mat-grid-tile *ngFor="let n of newsList" >
+        <mat-card  >
+            <mat-card-content   >
+                <div id="content">
+                    <table>
+                        <th colspan="2">{{n.title}}</th>
+                        <tr>
+                            <td colspan="2" class="description">{{n.description}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="new-content">{{n.content}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="btnDelete"><input type="button" class="btn" (click)=saveNew(n) value="Archive"></td>
+                        </tr>
+                        <tr>
+                            <td class="author">{{n.author}}</td>
+                            <td class="date">{{n.date}}</td>
+                        </tr>
+        
+                    </table>
+        
+                </div>
+
+            </mat-card-content>
+            
+        </mat-card>
+
+            
+        
+    </mat-grid-tile>
+</mat-grid-list>
